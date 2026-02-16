@@ -30,7 +30,7 @@ SELECT * FROM cuenta;
 
 BEGIN;
 
-UPDATE cuenta SET monto = monto - 5000 WHERE usuario_id = 1;
+UPDATE cuenta SET monto = monto - 500 WHERE usuario_id = 1;
 
 ROLLBACK;
 
