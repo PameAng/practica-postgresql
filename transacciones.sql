@@ -15,6 +15,20 @@ CREATE TABLE cuenta(
 	FOREIGN KEY(usuario_id) REFERENCES usuarios(id)
 );
 
+INSERT INTO usuarios (nombre, apellido, email)
+VALUES
+('Alice','Sosa','asosa@gmail.com'),
+('Pedro','Rodriguez','prodriguez@gmail.com'),
+('Rosa','Mercedes','rmercedes@gmail.com');
+
+INSERT INTO cuenta (usuario_id, monto)
+VALUES
+(1, 1000),
+(2, 500);
+
+SELECT * FROM usuarios;
+SELECT * FROM cuenta;
+
 
 BEGIN;
 
